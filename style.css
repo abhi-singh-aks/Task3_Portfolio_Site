@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --text:#fff;
+    --main:#3b82f6;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    background:#0f172a;
+}
+
+.logo a{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:var(--main);
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+section{
+    padding:100px 8%;
+    min-height:100vh;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:var(--main);
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.heading{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.heading span{
+    color:var(--main);
+}
+
+.skills-grid,
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-card,
+.project-card{
+    background:var(--card);
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.skill-card i{
+    font-size:40px;
+    color:var(--main);
+}
+
+.contact{
+    text-align:center;
+}
+
+.social-links a{
+    color:white;
+    font-size:30px;
+    margin:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+}
